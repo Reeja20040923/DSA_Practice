@@ -53,6 +53,49 @@ public class ArraySorting {
 			 d[i]=sc1.nextInt();
 		 }
 		 System.out.println(Arrays.toString(d));
+
+
+
+		 //linear search
+		int a[] = {10,20,60,40};
+		int search_element = 30;
+		boolean status=false;
+		
+		for(int i=0;i<a.length;i++) 
+		{
+			if(a[i]==search_element)
+			{
+				System.out.println("element found ");
+				status=true;
+				break;
+			}
+			else
+			{
+				System.out.println("element not found");
+			}
+			
+		}
+		
+		if(status==false)
+		{
+			System.out.println("element not found");
+		}
+		
+		
+		//2.find no. of repeatations
+		int b[] = {100,200,100,300,500,100};
+		int num = 100;
+		int count = 0;
+		
+		for(int value:b)
+		{
+			if(value==num)
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+		System.out.println(b);
 			
 	}
 	
